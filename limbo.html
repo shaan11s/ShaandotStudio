@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limbo Art Studio - Shaan.Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-detail.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><a href="index.html">Shaan.Studio</a></div>
+        <div class="nav-links">
+            <a href="logos.html">Logos</a>
+            <a href="websites.html" class="active">Websites</a>
+            <a href="games.html">Games</a>
+            <a href="code.html">Code</a>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <header class="project-header">
+            <h1>Limbo Art Studio</h1>
+            <p class="subtitle">A Research-Driven Approach to Online Art Gallery Design</p>
+            <div class="project-links">
+                <a href="https://limboartstudio.com" target="_blank" class="btn-primary">View Website</a>
+                <a href="https://github.com/shaan11s" target="_blank" class="btn-secondary">GitHub</a>
+            </div>
+        </header>
+
+        <section class="overview">
+            <h2>Overview</h2>
+            <p>Limbo Art Studio is a contemporary online art gallery designed with a research-backed approach to UI/UX that prioritizes user satisfaction and engagement. Drawing from academic research on digital art platforms, this project demonstrates how evidence-based design principles can create an intuitive, visually compelling experience for art collectors and enthusiasts.</p>
+
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <strong>Tech Stack:</strong> HTML5, CSS3, Vanilla JavaScript
+                </div>
+                <div class="tech-item">
+                    <strong>Design Philosophy:</strong> Minimalist, responsive, user-centric
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Research Foundation</h2>
+            <p>This project was informed by Wijaya et al.'s (2021) research on "The Effect of UI/UX Design on User Satisfaction in Online Art Gallery," which identified four critical factors for successful online art gallery design:</p>
+
+            <ul class="key-points">
+                <li><strong>Web system must be simple</strong> - Minimize cognitive load and visual clutter</li>
+                <li><strong>Web system must be consistent</strong> - Maintain predictable patterns throughout</li>
+                <li><strong>Web system must work properly</strong> - Ensure reliable, bug-free functionality</li>
+                <li><strong>Web system must fulfill user requirements</strong> - Address actual user needs and expectations</li>
+            </ul>
+
+            <p>The research compared successful platforms like ArtStation and DeviantArt, revealing that users prefer clean, light interfaces with responsive design and features that directly support their goals. These findings directly influenced every design decision in Limbo Art Studio.</p>
+
+            <h3>Key Research Insights Applied</h3>
+            <ul>
+                <li><strong>Responsive Design:</strong> The research emphasized that responsive websites make it easier for users to interact with content across devices</li>
+                <li><strong>Visual Aesthetics:</strong> Users tend to prefer lighter, cleaner designs over dark themes for art gallery contexts</li>
+                <li><strong>Feature-Rich Experience:</strong> Supporting features (filtering, registry, detailed artwork views) significantly improve user satisfaction</li>
+                <li><strong>Performance:</strong> Proper functionality and smooth interactions are non-negotiable for positive UX</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Design Principles</h2>
+
+            <div class="principle">
+                <h3>1. Simplicity First</h3>
+                <p>The interface uses minimal navigation (Gallery, Info, Registry) and a clean layout that lets the artwork speak for itself. This aligns with research showing that simple systems reduce cognitive load and increase user satisfaction.</p>
+                <ul>
+                    <li>Fixed header with only essential navigation</li>
+                    <li>Single-page application architecture for seamless transitions</li>
+                    <li>Minimal text, maximum visual impact</li>
+                    <li>Generous white space to prevent visual overwhelm</li>
+                </ul>
+            </div>
+
+            <div class="principle">
+                <h3>2. Consistency Throughout</h3>
+                <p>Every interaction follows predictable patterns:</p>
+                <ul>
+                    <li>Hover states use uniform opacity transitions (0.3s ease)</li>
+                    <li>Typography maintains consistent hierarchy</li>
+                    <li>Color palette limited to black, white, and accent grays</li>
+                    <li>Grid layouts remain consistent across breakpoints</li>
+                </ul>
+            </div>
+
+            <div class="principle">
+                <h3>3. Functional Excellence</h3>
+                <p>Informed by the research emphasis on proper functionality:</p>
+                <ul>
+                    <li>Smooth page transitions with fade-in animations</li>
+                    <li>Responsive design that adapts from mobile to desktop</li>
+                    <li>Interactive filtering system for artist-specific browsing</li>
+                    <li>Real-time form validation and success feedback</li>
+                    <li>Google Sheets integration for reliable data persistence</li>
+                </ul>
+            </div>
+
+            <div class="principle">
+                <h3>4. User-Centric Features</h3>
+                <p>Based on research into user requirements for online galleries:</p>
+                <ul>
+                    <li><strong>Artist Filtering:</strong> Quick access to specific artist portfolios</li>
+                    <li><strong>Collector Registry:</strong> Formalized system for purchase tracking and community building</li>
+                    <li><strong>Detailed Artwork Pages:</strong> Comprehensive information including medium, dimensions, and pricing</li>
+                    <li><strong>Interactive Home Experience:</strong> Engaging pixel-based interaction on desktop (with mobile fallback)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Features</h2>
+
+            <div class="feature">
+                <h3>Interactive Pixel Eraser (Desktop)</h3>
+                <p>A unique, engaging home page experience where users can "erase" a pixelated artwork to reveal the "LIMBO" logo beneath. This creates an immediate emotional connection and demonstrates technical sophistication.</p>
+
+                <p><strong>How it works:</strong></p>
+                <ul>
+                    <li>Randomly selects artwork from the collection on page load</li>
+                    <li>Converts image to pixel grid with customizable pixel size</li>
+                    <li>Tracks mouse movement to erase pixels within radius</li>
+                    <li>Protects logo text area from erasure</li>
+                    <li>Click to reset and try again</li>
+                </ul>
+
+                <p><strong>UX Rationale:</strong> Creates memorable first impression while maintaining simplicity (mobile users see static logo). This addresses research findings about the importance of engaging user experiences.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Filterable Gallery</h3>
+                <p>Clean grid layout with artist-based filtering:</p>
+                <ul>
+                    <li>Responsive grid adapts from 1 column (mobile) to multi-column (desktop)</li>
+                    <li>Smooth hover effects indicate clickability</li>
+                    <li>Instant filtering with no page reload</li>
+                    <li>Maintains visual consistency during transitions</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>Collector Registry</h3>
+                <p>Integration with Google Sheets for purchase tracking:</p>
+                <ul>
+                    <li>Clean form design with clear required fields</li>
+                    <li>Real-time submission to cloud storage</li>
+                    <li>Success message confirmation</li>
+                    <li>Optional fields for flexible data collection</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>Responsive Design</h3>
+                <p>Mobile-first approach with breakpoint at 768px:</p>
+                <ul>
+                    <li>Navigation adapts from horizontal to stacked</li>
+                    <li>Gallery grid collapses to single column</li>
+                    <li>Interactive features gracefully degrade</li>
+                    <li>Touch-friendly interaction targets</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Implementation</h2>
+
+            <h3>Architecture</h3>
+            <p>Single Page Application (SPA) Pattern provides instant navigation without page reloads, improving perceived performance and user satisfaction.</p>
+
+            <h3>Performance Optimizations</h3>
+            <ul>
+                <li><strong>CSS-Only Animations:</strong> Fade transitions use GPU-accelerated transforms</li>
+                <li><strong>Event Delegation:</strong> Efficient event handling for gallery items</li>
+                <li><strong>Lazy Loading Ready:</strong> Structure supports future image lazy loading</li>
+                <li><strong>Minimal Dependencies:</strong> No frameworks = faster load times</li>
+            </ul>
+
+            <h3>Accessibility Considerations</h3>
+            <ul>
+                <li>Semantic HTML structure</li>
+                <li>ARIA labels for interactive elements</li>
+                <li>Keyboard navigation support</li>
+                <li>High contrast text for readability</li>
+                <li>Scalable typography with rem units</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>User Experience Decisions</h2>
+
+            <div class="ux-decision">
+                <h3>Color Palette</h3>
+                <p><strong>Choice:</strong> Clean white background with black text and gray accents</p>
+                <p><strong>Research Justification:</strong> Wijaya et al. found that users "tend to dislike dark websites because dark websites make the website less attractive" in art gallery contexts. The light palette also allows artwork colors to remain true without color cast interference.</p>
+            </div>
+
+            <div class="ux-decision">
+                <h3>Typography</h3>
+                <p><strong>System Font Stack:</strong> Uses native fonts that load instantly, look familiar to users on their platform, and maintain brand neutrality that lets artwork shine.</p>
+            </div>
+
+            <div class="ux-decision">
+                <h3>Navigation</h3>
+                <p><strong>Fixed Header Design:</strong> Always accessible without scrolling, with thin profile and unobtrusive border separation. Consistent, simple navigation supports the research finding that systems must be "simple and consistent" for optimal user satisfaction.</p>
+            </div>
+
+            <div class="ux-decision">
+                <h3>Form Design</h3>
+                <p><strong>Collector Registry Approach:</strong> Clear visual hierarchy with labels and inputs, inline validation feedback, success state prominently displayed, and optional fields clearly marked. Reduces friction in purchase process while building collector community.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Results & Insights</h2>
+
+            <h3>Design Validation Against Research</h3>
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Research Factor</th>
+                        <th>Implementation</th>
+                        <th>Evidence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Simplicity</td>
+                        <td>Minimal navigation, clean layouts</td>
+                        <td>3 main pages, consistent spacing</td>
+                    </tr>
+                    <tr>
+                        <td>Consistency</td>
+                        <td>Uniform transitions, typography</td>
+                        <td>All hover states 0.3s, single font family</td>
+                    </tr>
+                    <tr>
+                        <td>Proper Function</td>
+                        <td>Tested interactions, responsive</td>
+                        <td>Form validation, smooth animations</td>
+                    </tr>
+                    <tr>
+                        <td>User Requirements</td>
+                        <td>Filtering, registry, details</td>
+                        <td>Artist filter, collector system, artwork pages</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Technical Performance</h3>
+            <ul>
+                <li><strong>Page Load:</strong> < 2 seconds (optimized assets)</li>
+                <li><strong>Interaction Responsiveness:</strong> Immediate feedback on all interactions</li>
+                <li><strong>Mobile Performance:</strong> Graceful degradation maintains functionality</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Lessons Learned</h2>
+
+            <h3>What Worked Well</h3>
+            <ul>
+                <li><strong>Research-Driven Design:</strong> Starting with academic research provided clear, validated design principles</li>
+                <li><strong>Vanilla JavaScript:</strong> No framework dependency meant faster development and lighter codebase</li>
+                <li><strong>Progressive Enhancement:</strong> Desktop interactions enhance but mobile experience remains solid</li>
+                <li><strong>Simple Backend:</strong> Google Sheets integration provides reliable data storage without complex infrastructure</li>
+            </ul>
+
+            <h3>Challenges Overcome</h3>
+            <ul>
+                <li><strong>Pixel Eraser Performance:</strong> Initial implementation caused frame rate drops; optimized with requestAnimationFrame</li>
+                <li><strong>Responsive Images:</strong> Maintaining artwork aspect ratios across breakpoints required careful CSS</li>
+                <li><strong>Form Validation:</strong> Balancing user-friendly feedback with proper validation took iteration</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Key Takeaways</h2>
+            <ul class="key-points">
+                <li><strong>Research matters:</strong> Academic studies provide valuable frameworks for practical design</li>
+                <li><strong>Simplicity scales:</strong> Clean, minimal design works across contexts and devices</li>
+                <li><strong>Consistency builds trust:</strong> Predictable patterns make users comfortable</li>
+                <li><strong>Function over flash:</strong> Reliable interactions trump impressive but buggy features</li>
+                <li><strong>Know your users:</strong> Understanding actual needs beats assumed requirements</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>References</h2>
+            <p class="reference">Wijaya, A., Kefry, Wihalim, W., & Gunawan, A. A. S. (2021). The Effect of UI/UX Design on User Satisfaction in Online Art Gallery. 2021 1st International Conference on Computer Science and Artificial Intelligence (ICCSAI), 120-125. https://doi.org/10.1109/ICCSAI53272.2021.9609764</p>
+        </section>
+
+        <footer class="project-footer">
+            <p>This project was created as a demonstration of research-informed web design for digital art galleries. All artwork featured belongs to the respective artists: Gabriel Palau and Silvestre Madera.</p>
+            <p><strong>Last Updated:</strong> January 2026 | <strong>License:</strong> MIT</p>
+        </footer>
+    </main>
+</body>
+</html>
