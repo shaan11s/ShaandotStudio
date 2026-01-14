@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Game - Shaan.Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+        .game-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .game-frame {
+            border: 1px solid #e5e5e5;
+            background: #000;
+            width: 720px;
+            height: 720px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back-link:hover {
+            color: #1a1a1a;
+        }
+        .game-instructions {
+            color: #666;
+            font-size: 14px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><a href="index.html">Shaan.Studio</a></div>
+        <div class="nav-links">
+            <a href="logos.html">Logos</a>
+            <a href="websites.html">Websites</a>
+            <a href="games.html" class="active">Games</a>
+            <a href="code.html">Code</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="portfolio-content">
+        <a href="games.html" class="back-link">← Back to Games</a>
+        <h1>Resume Game</h1>
+        <div class="game-container">
+            <iframe src="resume-game/index.html" class="game-frame" frameborder="0"></iframe>
+        </div>
+        <p class="game-instructions">Press SPACE to start. Use WASD to move.</p>
+    </main>
+</body>
+</html>

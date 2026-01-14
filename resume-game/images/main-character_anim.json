@@ -1,0 +1,52 @@
+{
+    "anims": [
+        {
+            "key": "main-character_walk",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "main-character",
+                    "frame": "merchant_walk_1"
+                },
+                {
+                    "key": "main-character",
+                    "frame": "merchant_walk_2"
+                },
+                {
+                    "key": "main-character",
+                    "frame": "merchant_walk_3"
+                },
+                {
+                    "key": "main-character",
+                    "frame": "merchant_walk_4"
+                }
+            ]
+        },
+        {
+            "key": "main-character_idle",
+            "type": "frames",
+            "repeat": -1,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "main-character",
+                    "frame": "merchant_idle_1"
+                },
+                {
+                    "key": "main-character",
+                    "frame": "merchant_idle_2"
+                },
+                {
+                    "key": "main-character",
+                    "frame": "merchant_idle_3"
+                },
+                {
+                    "key": "main-character",
+                    "frame": "merchant_idle_4"
+                }
+            ]
+        }
+    ]
+}
