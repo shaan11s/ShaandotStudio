@@ -7,7 +7,7 @@ let pixelSize = 8;
 let mouse = { x: null, y: null, radius: 100 };
 
 // Array of images to choose from randomly
-const images = ['imgs/city_r.jpeg', 'imgs/fence_r.jpeg', 'imgs/ipod_r.jpeg'];
+const images = ['imgs/city_r.jpeg', 'imgs/fence_r.jpeg'];
 
 // Pick a random image on page load
 const randomIndex = Math.floor(Math.random() * images.length);
