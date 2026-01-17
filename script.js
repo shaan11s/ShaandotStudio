@@ -255,6 +255,7 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
+// Mouse events
 canvas.addEventListener('mousemove', function(e) {
     const rect = canvas.getBoundingClientRect();
     mouse.x = e.clientX - rect.left;
@@ -262,6 +263,28 @@ canvas.addEventListener('mousemove', function(e) {
 });
 
 canvas.addEventListener('mouseleave', function() {
+    mouse.x = null;
+    mouse.y = null;
+});
+
+// Touch events for mobile
+canvas.addEventListener('touchstart', function(e) {
+    e.preventDefault();
+    const rect = canvas.getBoundingClientRect();
+    const touch = e.touches[0];
+    mouse.x = touch.clientX - rect.left;
+    mouse.y = touch.clientY - rect.top;
+}, { passive: false });
+
+canvas.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+    const rect = canvas.getBoundingClientRect();
+    const touch = e.touches[0];
+    mouse.x = touch.clientX - rect.left;
+    mouse.y = touch.clientY - rect.top;
+}, { passive: false });
+
+canvas.addEventListener('touchend', function() {
     mouse.x = null;
     mouse.y = null;
 });
