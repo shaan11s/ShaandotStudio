@@ -116,8 +116,8 @@ body {
 @media (max-width: 900px) {
     .portfolio-content {
         margin-left: 0;
-        margin-top: 70px;
-        padding: 40px 30px;
+        margin-top: 56px;
+        padding: 30px 20px;
     }
 
     .gallery {

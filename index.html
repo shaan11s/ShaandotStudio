@@ -9,6 +9,11 @@
 <body>
     <nav class="navbar">
         <div class="nav-brand">Shaan.Studio</div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <div class="nav-links">
             <a href="logos.html">Logos</a>
             <a href="websites.html">Websites</a>
@@ -20,8 +25,20 @@
 
     <div class="hero-container">
         <canvas id="pixelCanvas"></canvas>
+        <img src="imgs/ipod_r.jpeg" alt="Shaan Studio" class="mobile-hero">
     </div>
 
     <script src="script.js"></script>
+    <script>
+        // Mobile nav toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>

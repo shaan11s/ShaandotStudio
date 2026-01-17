@@ -6,10 +6,31 @@
     <title>Contact - Shaan.Studio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="portfolio.css">
+    <style>
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .contact-links a {
+            color: #666;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        .contact-links a:hover {
+            color: #1a1a1a;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-brand"><a href="index.html">Shaan.Studio</a></div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <div class="nav-links">
             <a href="logos.html">Logos</a>
             <a href="websites.html">Websites</a>
@@ -21,7 +42,19 @@
 
     <main class="portfolio-content contact-page">
         <h1>Contact</h1>
-        <p class="contact-email"><a href="mailto:shaansekhon11@gmail.com">shaansekhon11@gmail.com</a></p>
+        <div class="contact-links">
+            <a href="mailto:shaansekhon11@gmail.com">shaansekhon11@gmail.com</a>
+            <a href="https://www.linkedin.com/in/shaansekhon/" target="_blank">LinkedIn</a>
+        </div>
     </main>
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>
